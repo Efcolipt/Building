@@ -14,7 +14,9 @@ $(document).ready(function(){
 				let levelCurrent = $(this).attr('data-level-current');
 				let barStop = $('.progress__bar').find(`.bar__stop[data-id="${LevelBar}"] > .circle_bar`);
 				let txtCurrentType = currentType.find('p').text();
-				paymentData.push(txtCurrentType);
+				if (levelCurrent != 6) {
+					paymentData.push(txtCurrentType);
+				}
 				LevelBar++;
 				barStop.css({'background':'#FED562','box-shadow':'0px 0px 7px #FED562'});
 
@@ -69,15 +71,8 @@ $(document).ready(function(){
 						url: "sendMail.php",
 						data: {'paymentData':paymentData },
 						success: function(msg){
-							if (msg) {
-								console.log('Найс');
 								console.log(msg);
-							}else{
-								console.log('не Найс');
-								console.log(msg);
-							}
-						   
-					}
+						}
 				});
 			}
 				

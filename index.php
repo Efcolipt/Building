@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
 <head>
-	<title>Building</title>
+	<title>Бригадный подряд</title>
 	<meta charset="UTF-8">
 	<!-- Media -->
+	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- Skype toolbar none -->
@@ -17,12 +18,12 @@
 	<meta name="copyright" content="Libils Team">
 
 	<!-- Open Graph Meta -->
-	<meta property="og:title" content="">
+	<meta property="og:title" content="Бригадный подряд">
 	<meta property="og:locale" content="ru_RU">
 	<meta property="og:description" content="">
 	<meta property="og:image" content="">
-	<meta property="og:site_name" content="">
-	<meta property="og:url" content="">
+	<meta property="og:site_name" content="Бригадный подряд">
+	<meta property="og:url" content="http://bp116.ru">
 	<meta property="og:type" content="website">
 
 	<!-- Css -->
@@ -40,13 +41,13 @@
 					<div class="logo"><img src="image/header/logo.png" alt="logo"></div>
 					<div class="phone__header">
 						<span class="phone__header__img"><img src="image/header/phone.png" alt="phone"></span>
-						<span class="phone__header__number">+7(937)615-43-01</span>
+						<p class="phone__header__number">+7(937)615-43-01</p>
 					</div>
 				</div>
 				<div class="intro__content animated opacity-zero">
-					<p class="color__default intro__sub__text">Планируете ремонт в новостройке?</p>
-					<h2>СДЕЛАЕМ КАЧЕСТВЕННЫЙ И ПРЕМИАЛЬНЫЙ <br> 		РЕМОНТ ВАШЕЙ КВАРТИРЫ ТОЧНО В СРОК</h2>
-					<p class="intro__sub__text"><img src="image/header/Vector.png" alt="Vector"> <span class="color__default"> Профессиональное</span> качество</p>
+					<p class="color__default intro__sub__text">Планируете сделать ремонт в своей новой квартире?</p>
+					<h2>СДЕЛАЕМ ВАМ КАЧЕСТВЕННЫЙ  <br> 		РЕМОНТ  КВАРТИРЫ БЕЗ ПЕРЕПЛАТ И ТОЧНО В СРОК</h2>
+					<p class="intro__sub__text"><img src="image/header/Vector.png" alt="Vector"> <span class="color__default"> Профессионалы</span> своего дела</p>
 					<div class="qualities">
 						<div class="qualitie">
 							<div class="img__qualitie"><img src="image/header/car.png" alt="car"></div>
@@ -179,7 +180,7 @@
 										<p class="color__black">В течении 3-х дней </p>
 									</div>
 									<div class="type">
-										<p class="color__black">осенью 2019</p>
+										<p class="color__black">осенью <?php echo date("Y"); ?></p>
 									</div>
 									<div class="type">
 										<p class="color__black">В течении недели</p>
@@ -187,13 +188,17 @@
 								</div>
 								<div class="type__innerDf" data-id="3">
 									<div class="type">
-										<p class="color__black">Зимой 2020</p>
+										<p class="color__black">Зимой <?php
+										$nextYear = date("Y");
+										echo $nextYear++; ?></p>
 									</div>
 									<div class="type">
 										<p class="color__black">В течении месяца </p>
 									</div>
 									<div class="type">
-										<p class="color__black">Весной 2020</p>
+										<p class="color__black">Весной <?php
+										$nextYear = date("Y");
+										echo $nextYear++; ?></p>
 									</div>
 								</div>
 								<p class="question__now__for__this__type">Когда вы бы хотели начать ремонт?</p>
@@ -280,7 +285,7 @@
 		</div>
 		<div class="principles">
 			<div class="container">
-				<h2 style="text-align: center;" class="animated opacity-zero">4 отличительных принципов нашей работы</h2>
+				<h2 style="text-align: center;" class="animated opacity-zero">4 отличительных принципа нашей работы</h2>
 				<div class="img__principles animated opacity-zero">
 					<img src="image/principles/principles.png" alt="principles">
 				</div>
@@ -317,7 +322,7 @@
 									</div>
 								</div>
 							</div>
- 
+							
 							<div class="qualitie__about__principle animated opacity-zero">
 								<div class="img__block__this__principle">
 									<img src="image/principles/phone.png" alt="phone">
@@ -346,18 +351,18 @@
 								</div>
 							</div>
 						</div>
-						<div class="photo__worker animated opacity-zero">
+						<!-- <div class="photo__worker animated opacity-zero">
 							<div class="img__worker">
 								<img src="image/principles/photo__worker.png" alt="photo__worker">
 								<div class="about__this__worker__whoIs">
 									<p class="color__black">Главный прораб БП <br> Стаж работы—11 лет</p>
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 					<div class="btns__callback__worker animated opacity-zeror">
-						<button class="phone__workers"><img src="image/principles/phone__worker.png" alt="phone__worker">+7 (937) 615-43-01</button>
-						<button class="call__brig color__black">Услышать бригадира</button>
+						<a href="tel:+79376154301" class="phone__workers"><img src="image/principles/phone__worker.png" alt="phone__worker">+7 (937) 615-43-01</a>
+						<a href="tel:+79376154301" class="call__brig color__black">Услышать бригадира</a>
 					</div>
 				</div>
 			</div>
@@ -365,7 +370,7 @@
 		<div class="flats">
 			<div class="container">
 				<div class="headline">
-					<h2 class="color__black animated opacity-zero">С 2008 года сдали более 6 000+ квартир с ремонтом различного типа и сложности</h2>
+					<h2 class="color__black animated opacity-zero">С 2008 года сдали более 2 000+ квартир с ремонтом различного типа и сложности</h2>
 				</div>
 				<div class="inner__flats">
 
@@ -434,6 +439,28 @@
 			</div>
 		</div>
 		
+		<div class="testimonials">
+			<div class="container">
+				<div class="inner__testimonials">
+					<div class="testimonial">
+						<iframe src="https://vk.com/video_ext.php?oid=-16209554&id=456239069&hash=8cebcc46206a047d" width="340" height="360" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="testimonial">
+						 <iframe src="https://vk.com/video_ext.php?oid=-16209554&id=456239065&hash=a1e6596cdfa177fc" width="340" height="360" frameborder="0" allowfullscreen></iframe>
+					</div>
+
+					<div class="testimonial">
+						<iframe src="https://vk.com/video_ext.php?oid=-16209554&id=456239053&hash=d7a58cbc9f2bd8b1" width="340" height="360" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="testimonial">
+						 <iframe src="https://vk.com/video_ext.php?oid=-16209554&id=456239051&hash=d7b562ee36cd6af6" width="340" height="360" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="testimonial">
+						<iframe src="https://vk.com/video_ext.php?oid=-16209554&id=456239045&hash=2ee15e6028a9ac77" width="340" height="360" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<div class="six__stage">
 			<div class="container">
@@ -476,17 +503,8 @@
 							<i class="fas fa-wallet"></i>
 						</div>
 						<div class="about__this__six__stage__quality">
-							<p class="about__this__six__stage__quality__name">Расчитываем по факту </p>
+							<p class="about__this__six__stage__quality__name">Гарантия на ремонт</p>
 							<p class="about__this__six__stage__quality__txt">На все работы даем гарантию 1 год. <br>  В случае дефектов бесплатно устраняем их. </p>
-						</div>
-					</div>
-					<div class="six__stage__quality animated opacity-zero">
-						<div class="six__stage__quality__img">
-							<i class="fas fa-list"></i>
-						</div>
-						<div class="about__this__six__stage__quality">
-							<p class="about__this__six__stage__quality__name">3-x уровневая проверка качества произведенных работ </p>
-							<p class="about__this__six__stage__quality__txt">Каждый наш объект проходит 3-х уровневую систему контроля качества: <br> прораб-инженер , по контролю качества, директор по строительству.</p>
 						</div>
 					</div>
 					<div class="six__stage__quality animated opacity-zero">
@@ -499,26 +517,35 @@
 								Работаем по планам и присылаем фотоотчеты. <br> После ремонта делаем уборку </p>
 							</div>
 						</div>
+						<div class="six__stage__quality animated opacity-zero">
+							<div class="six__stage__quality__img">
+								<i class="fas fa-list"></i>
+							</div>
+							<div class="about__this__six__stage__quality">
+								<p class="about__this__six__stage__quality__name">Этап сдачи - приема выполненных работ. <br>Оплата работ в соответствии со сметой </p>
+								<p class="about__this__six__stage__quality__txt">Каждый наш объект проходит 3-х уровневую систему контроля качества: <br> прораб-инженер , по контролю качества, директор по строительству.</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<footer>
 				<div class="container">
-					<div class="headline animated opacity-zero">
+					<!-- <div class="headline animated opacity-zero">
 						<img src="image/footer/h1.png" alt="h1">	
-					</div>
+					</div> -->
 					<div class="inner__footer animated opacity-zero">
-						<h2>Михаил Романов</h2>
+						<!-- <h2>Михаил Романов</h2>
 						<h3>Главный прораб БП г. Казань</h3>
-						<p>По всем интересующим вопросам Вы можете обратиться ко мне и я обязательно с Вами свяжусь.</p>
-						<button class="inp__footer" type="button">+7(937)615-43-01</button>
+						<p>По всем интересующим вопросам Вы можете обратиться ко мне и я обязательно с Вами свяжусь.</p> -->
+						<a href="https://wa.me/79274114999" class="inp__footer" type="button">+7(937)615-43-01</a>
 						<button class="inp__footer" type="button">What`s App</button>
 					</div>
 				</div>
 			</footer>
 			<div class="copyrightLT animated opacity-zero">
-		        <p>Site created <a href="https://vk.com/libils_team" title="Группа в Вк">Libils Team</a> 2019©</p>
-		    </div>
+				<p>Site created <a href="https://vk.com/libils_team" title="Группа в Вк">Libils Team</a> 2019©</p>
+			</div>
 		</div>
 		
 

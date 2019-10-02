@@ -1,8 +1,5 @@
 @media only screen and (max-width: 1240px){
-	.qualities__about__principles{
-		width: 75%;
-		padding-left: 50px;
-	}
+
 
 
 	.img__principles > img {
@@ -141,14 +138,15 @@
 	.img__principles > img {
 	    width: 100%;
 	}
+	.type__obj{
+		justify-content: space-around;
+	}
 }
 @media only screen and (max-width:775px ){
 	.qualities{
 		flex-direction: column;
 	}
-	.type__obj{
-		justify-content: space-around;
-	}
+	
 	.stage{
 		text-align: center;
 	}
@@ -195,6 +193,13 @@
 	.img__current__flat{
 		margin-bottom: 20px !important;
 	}
+	.end__calc{
+		padding-right: 0;
+		padding-left: 0;
+	}.end__calc > h2{
+	    font-size: 27px;
+	    line-height: 33px;
+	}
 }
 @media only screen and (max-width:600px ){
 	.still__current__img__flat{
@@ -208,8 +213,8 @@
 	}
 	.img__current__flat > img{
 		height: 335px;
-		width: auto;
-		    max-width: 400px;
+		width: 100%;
+		max-width: 400px;
 	}
 	.still__current__img__flat > img{
 		margin-left: 0 !important;
@@ -255,10 +260,27 @@
 		justify-content: center;
 	}
 	.type__innerDf{
-		width: 50%;
+		width: 100%;
+		justify-content: center;
 	}
 	.btn__next__payment{
 		margin-top: 80px;
+	}
+	.type__innerDf > .type {
+		max-width: 100%!important;
+	}
+	
+	.type{
+		width: 260px;
+	}
+	.type__obj[data-id="2"], .type__obj[data-id="3"], .type__obj[data-id="4"]{
+		max-width: 100%!important;
+	}
+	.type__obj[data-id="2"]  .type, .type__obj[data-id="3"]  .type, .type__obj[data-id="4"]  .type{
+		width: 100%!important;
+	}
+	.phone__payment__send{
+		width: 100%;
 	}
 }
 @media only screen and (max-width: 430px){
@@ -302,12 +324,17 @@
 		width: 100%;
 		height: 385px;
 	}
+	.testimonail iframe {
+		width: 100%!important;
+		height: 320px!important;
+	}
 }
 
 @media only screen and (max-width: 370px){
 	.progress__bar,.progress__indicator{
 		display: none;
 	}
+
 	.stage{
 		margin-top: 50px;
 	}

@@ -111,7 +111,7 @@ span,small {
 	line-height: 22px;
 }
 .phone__header__number{
-	color:#fff;
+	color:#fff!important;
 	font-size: 30px;
 	font-weight: bold;
 }
@@ -467,7 +467,8 @@ span,small {
 	display: -o-flex;
 	display: flex;
 	flex-wrap: wrap;
-	width: 77%;
+	width: 100%;
+	justify-content: center;
 
 
 }
@@ -506,16 +507,15 @@ span,small {
 	margin-top: 80px;
 	margin-bottom: 80px;
 	text-align: center;
-    max-width: 800px;
 }
 .phone__workers > img{
 	margin-right: 5px;
 	vertical-align: middle;
 }
-.btns__callback__worker> button:hover{
+.btns__callback__worker a:hover{
 	opacity: .7;
 }
-.btns__callback__worker> button{
+.btns__callback__worker a{
 	border:0;
 	transition: all.3s ease;
 	cursor: pointer;
@@ -528,7 +528,7 @@ span,small {
 .phone__workers{
 	background: #C4C4C4;
 	color:#fff;
-	padding:13.5px 60px;
+	padding:15px 60px;
 }
 .call__brig{
 	background: #FED562;
@@ -714,7 +714,23 @@ span,small {
 	color:#2E2F31;
 }
 
-
+/*Testimonials*/
+.inner__testimonials{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.testimonial{
+	margin: 10px 20px;
+}
+.testimonials{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
 /*Footer*/
 footer{
 	padding-top: 50px;
@@ -722,7 +738,7 @@ footer{
 	text-align:center;
 	background:#252525;
 }
-footer img {
+/*footer img {
 	max-width: 730px;
 }
 .inner__footer > h2,.inner__footer > h3,.inner__footer > p{
@@ -735,8 +751,9 @@ footer img {
 	font-size: 1.7em;
 }
 .inner__footer > p{
+	margin-bottom: 30px;
 	margin-top: 20px;
-}
+}*/
 
 .inp__footer{
 	font-family: Montserrat;
@@ -752,9 +769,7 @@ footer img {
 	background: inherit;
 	cursor: pointer;
 }
-.inp__footer:last-child{
-	margin-left: 20px;
-}
+
 .inp__footer:hover{
 	box-shadow: 0px 1px 15px #FED562;
 	background: #FED562 ;
